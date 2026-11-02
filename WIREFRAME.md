@@ -4,6 +4,12 @@
 
 Goal: show page structure, navigation, major sections, forms, buttons, cards, and user flow — before coding. Visual perfection is not the objective.
 
+## Corrected overview — use this one
+
+![Corrected wireframe — all 6 pages](wireframe/wireframe-corrected.png)
+
+This corrected version matches the built app exactly: Landing, Dashboard, Notes view, Upload, Login/Register, Profile. Do **not** use the earlier Claude draft — it added a Revision page (`/revision/[id]`, with flashcards / score) and a separate Saved page (`/saved`), neither of which is in our MVP or in the code, and it used navy `#1f2a5a` instead of our Primary `#2563EB`.
+
 ## User flow
 
 ```
