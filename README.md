@@ -69,10 +69,9 @@ Navbar, Sidebar, Button, Card, Input, Modal, Badge, Table, EmptyState, NoteCard,
 
 | Student | Work |
 |---|---|
-| Student 1 | Next.js setup, Authentication UI (Login/Register), Navbar, Dashboard, React Context |
-| Student 2 | Landing page, Reusable components, Forms (Upload), Cards, Responsive UI, Dummy data |
-
-Both students must contribute meaningful code. Add your names to this table before presenting.
+Tejas V K: Next.js setup, Auth UI, Navbar, React Context
+Suvin krishnan nair: Landing page, Dashboard, Note Detail, Search / Filter
+Ahaan rai: Upload, Profile, Reusable components, Cards, Responsive UI, Dummy data
 
 Full issue plan: see `docs/GITHUB-PLAN.md`. Presentation outline: see `docs/PRESENTATION.md`.
 
