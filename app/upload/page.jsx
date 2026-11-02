@@ -72,6 +72,9 @@ export default function UploadPage() {
             </select>
             <Input label="Lecturer" value={lecturer} onChange={(e) => setLecturer(e.target.value)} placeholder="e.g. Prof. A. Sharma" />
             <Input label="Duration" value={duration} onChange={(e) => setDuration(e.target.value)} placeholder="45 min" />
+            <label>Recording file (optional — demo only, file is not uploaded to a server)</label>
+            <input type="file" accept="audio/*,.mp3,.wav,.m4a,.mp4" className="input" onChange={(e) => { const f = e.target.files && e.target.files[0]; if (f) setFileName(f.name); }} />
+            {fileName ? <p className="small">Selected: {fileName}</p> : <p className="small">Or type a file name: e.g. lecture-12.mp3</p>}
             <Input label="Recording file name (optional)" value={fileName} onChange={(e) => setFileName(e.target.value)} placeholder="e.g. lecture-12.mp3" />
             <label>Transcript (paste a few lines — simulated)</label>
             <textarea className="input" rows={5} value={transcript} onChange={(e) => setTranscript(e.target.value)} placeholder="Paste the lecture transcript here…" />
