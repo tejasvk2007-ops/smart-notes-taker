@@ -1,5 +1,7 @@
 # Smart Note Taker – Wireframe
 
+> Images: `wireframe/wireframe-landing.png`, `wireframe/wireframe-dashboard.png`, `wireframe/wireframe-note-detail.png` — they load on GitHub when the whole repo is viewed together. If you open this .md file alone, the images may show as not found; use the single-file version instead: [WIREFRAME.pdf](wireframe/WIREFRAME.pdf)
+
 Goal: show page structure, navigation, major sections, forms, buttons, cards, and user flow — before coding. Visual perfection is not the objective.
 
 ## User flow
