@@ -1,0 +1,1 @@
+{"dependencies":{"next":"14.2.5","react":"18.3.1","react-dom":"18.3.1"},"description":"Smart Note Taker — converts lectures into short, organised notes with highlighted key points for college students.","name":"smart-note-taker","private":true,"scripts":{"build":"next build","dev":"next dev","lint":"next lint","start":"next start"},"version":"1.0.0"}
