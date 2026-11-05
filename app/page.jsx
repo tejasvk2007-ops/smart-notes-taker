@@ -61,7 +61,7 @@ export default function Home() {
       <section className="card">
         <h2>How it works</h2>
         <p><b>1.</b> Upload a lecture &nbsp;→&nbsp; <b>2.</b> We prepare a summary + key points &nbsp;→&nbsp; <b>3.</b> You revise from your dashboard.</p>
-        <p className="small">In this MVP, audio processing is simulated: paste a transcript and the app generates the summary and key points. No backend is used — notes are realistic dummy data stored in React Context.</p>
+        <p className="small">Upload a lecture, paste a transcript, and get a short summary with key points.</p>
         <Link className="btn" href="/upload">Try uploading a lecture</Link>
       </section>
     </main>

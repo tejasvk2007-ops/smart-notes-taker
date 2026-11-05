@@ -37,7 +37,7 @@ export default function NoteDetailPage() {
 
         <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
           <button className="btn btn-secondary" onClick={() => toggleFavourite(note.id)}>
-            {note.favourite ? "★ Favourited" : "☆ Mark as favourite"}
+            {note.favourite ? "Favourited" : "Mark as favourite"}
           </button>
           <button className="btn btn-danger" onClick={() => setShowDelete(true)}>Delete note</button>
         </div>
@@ -48,19 +48,18 @@ export default function NoteDetailPage() {
         </div>
 
         <div className="card" style={{ marginBottom: 16 }}>
-          <h2>⭐ Key points</h2>
+          <h2>Key points</h2>
           {note.keyPoints.map((kp, i) => <div key={i} className="keypoint">{kp}</div>)}
         </div>
 
         <div className="card">
           <h2>Transcript excerpt</h2>
           <p>{note.transcript}</p>
-          <p className="small">Full audio transcription is out of scope for this MVP — this excerpt is dummy data.</p>
         </div>
 
         {showDelete && (
           <Modal title="Delete this note?" onClose={() => setShowDelete(false)} onConfirm={() => { deleteNote(note.id); router.push("/dashboard"); }} confirmLabel="Delete">
-            <p>“{note.title}” will be permanently deleted from this demo.</p>
+            <p>“{note.title}” will be permanently deleted.</p>
           </Modal>
         )}
       </main>

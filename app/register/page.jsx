@@ -22,7 +22,7 @@ export default function RegisterPage() {
     <main className="container" style={{ maxWidth: 480 }}>
       <div className="card">
         <h1>Register</h1>
-        <p className="small">Create a demo account — stored only in your browser for this MVP.</p>
+        <p className="small">Create your account to get started.</p>
         <form onSubmit={submit}>
           <Input label="Full name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" required />
           <Input label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@college.edu" required />

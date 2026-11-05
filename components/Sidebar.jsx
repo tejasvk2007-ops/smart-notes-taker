@@ -3,9 +3,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/dashboard", label: "📊 Dashboard" },
-  { href: "/upload", label: "⬆️ Upload Lecture" },
-  { href: "/profile", label: "👤 Profile" },
+  { href: "/dashboard", label: "Dashboard" },
+  { href: "/upload", label: "Upload Lecture" },
+  { href: "/profile", label: "Profile" },
 ];
 
 export default function Sidebar() {

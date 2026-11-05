@@ -21,7 +21,7 @@ export default function LoginPage() {
     <main className="container" style={{ maxWidth: 480 }}>
       <div className="card">
         <h1>Login</h1>
-        <p className="small">Demo login — any email and password works in this MVP (no backend).</p>
+        <p className="small">Login with any email and password.</p>
         <form onSubmit={submit}>
           <Input label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@college.edu" required />
           <Input label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••" required />

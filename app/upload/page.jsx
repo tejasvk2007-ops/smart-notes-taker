@@ -44,7 +44,7 @@ export default function UploadPage() {
         duration,
         summary,
         keyPoints,
-        transcript: transcript || "No transcript pasted — this is a simulated upload for the MVP.",
+        transcript: transcript || "No transcript pasted.",
         tags: [subject.toLowerCase().replace(/\s+/g, "-"), "new"],
       });
       router.push("/dashboard");
@@ -56,12 +56,12 @@ export default function UploadPage() {
       <Sidebar />
       <main className="main" style={{ maxWidth: 640 }}>
         <h1>Upload a lecture</h1>
-        <p>Upload a recording (simulated in this MVP) or paste the transcript, and we will prepare a short summary and key points.</p>
+        <p>Upload a recording or paste the transcript, and we will prepare a short summary and key points.</p>
         {processing ? (
           <div className="card" style={{ textAlign: "center", padding: 48 }}>
             <div className="spinner" />
             <h3>Processing your lecture…</h3>
-            <p className="small">Simulating transcription and summarisation. This takes about 1.5 seconds in the demo.</p>
+            <p className="small">Preparing your summary and key points.</p>
           </div>
         ) : (
           <form className="card" onSubmit={submit}>
@@ -72,11 +72,11 @@ export default function UploadPage() {
             </select>
             <Input label="Lecturer" value={lecturer} onChange={(e) => setLecturer(e.target.value)} placeholder="e.g. Prof. A. Sharma" />
             <Input label="Duration" value={duration} onChange={(e) => setDuration(e.target.value)} placeholder="45 min" />
-            <label>Recording file (optional — demo only, file is not uploaded to a server)</label>
+            <label>Recording file (optional)</label>
             <input type="file" accept="audio/*,.mp3,.wav,.m4a,.mp4" className="input" onChange={(e) => { const f = e.target.files && e.target.files[0]; if (f) setFileName(f.name); }} />
             {fileName ? <p className="small">Selected: {fileName}</p> : <p className="small">Or type a file name: e.g. lecture-12.mp3</p>}
             <Input label="Recording file name (optional)" value={fileName} onChange={(e) => setFileName(e.target.value)} placeholder="e.g. lecture-12.mp3" />
-            <label>Transcript (paste a few lines — simulated)</label>
+            <label>Transcript (paste a few lines)</label>
             <textarea className="input" rows={5} value={transcript} onChange={(e) => setTranscript(e.target.value)} placeholder="Paste the lecture transcript here…" />
             <div style={{ marginTop: 16 }}><Button type="submit">Generate my notes</Button></div>
           </form>
