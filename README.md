@@ -1,4 +1,4 @@
-# Smart Note Taker 📝
+# Smart Note Taker 
 
 Lectures into short, organised notes — for college students who miss the next point while writing the last one.
 
