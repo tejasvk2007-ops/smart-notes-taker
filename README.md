@@ -90,4 +90,4 @@ Full issue plan: see `docs/GITHUB-PLAN.md`. Presentation outline: see `docs/PRES
 - [x] GitHub repository (create on github.com and push this folder)
 - [x] GitHub Issues — see `docs/GITHUB-PLAN.md`
 - [x] Next.js application, required pages, reusable components, React Context, dummy data
-- [ ] Final presentation video — record after running the demo (see `docs/PRESENTATION.md`)
+- [x] Final presentation video — record after running the demo (see `docs/PRESENTATION.md`)
